@@ -1,0 +1,160 @@
+.text {
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.container {
+  display: flex;
+  width: 100%;
+}
+
+.slider {
+  width: 100%;
+}
+
+#start {
+  position: relative;
+  top: -12px;
+}
+#end {
+  position: relative;
+  top: -33px;
+}
+
+/* track */
+.slider input[type="range"] {
+  -webkit-appearance: none !important;
+  width: 100%;
+  height: 1px;
+  background-color: black;
+  border: none;
+  border-radius: 10px;
+  margin: auto;
+  transition: all 400ms;
+  outline: none;
+  padding: 0;
+  margin: 0;
+}
+.slider input[type="range"]::-moz-range-track {
+  width: 100%;
+  height: 1px;
+  background-color: #ff5252;
+  border: none;
+  border-radius: 10px;
+  margin: auto;
+  transition: all 400ms;
+  outline: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* thumb */
+.slider input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none !important;
+  transform: scale(0.75);
+  width: 20px;
+  height: 20px;
+  border: none;
+  background-color: black;
+  border-radius: 40px;
+  box-shadow: 0px 0px 0px green;
+  transition: all 400ms;
+  outline: none;
+}
+.slider input[type="range"]::-moz-range-thumb {
+  -webkit-appearance: none !important;
+  transform: scale(0.75);
+  width: 20px;
+  height: 20px;
+  border: none;
+  background-color: black;
+  border-radius: 30px;
+  box-shadow: 0px 0px 0px green;
+  transition: all 400ms;
+  outline: none;
+}
+
+/* thumb hover */
+.slider input[type="range"]::-webkit-slider-thumb:hover {
+  transform: scale(0.85);
+}
+.slider input[type="range"]::-moz-range-thumb:hover {
+  transform: scale(0.85);
+}
+
+/* thumb active */
+.slider input[type="range"]::-webkit-slider-thumb:active {
+  transform: scale(1);
+}
+.slider input[type="range"]::-moz-range-thumb:active {
+  transform: scale(1);
+}
+
+.range_value {
+  font-size: 12px;
+  margin-left: 17px;
+  position: relative;
+  bottom: 30px;
+  color: gray;
+}
+.date_time {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.dateToCnt {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.datefromCnt {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.dttext {
+  font-size: 13px;
+  color: gray;
+  font-weight: 400;
+}
+
+.input_date {
+  width: 181px;
+  height: 30px;
+  border: none;
+  background-color: #f3f4e9;
+  padding: 4px;
+  border-radius: 16px;
+  box-shadow: 0px 1px 0px -1px;
+  margin-top: 17px;
+}
+
+.devider {
+  width: 100%;
+  height: 1px;
+  background-color: black;
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+.clearBtn {
+  background: white;
+  border: none;
+  font-weight: 600;
+}
+.applybtn {
+  background-color: black;
+  color: white;
+  border: none;
+  width: 70px;
+  height: 28px;
+  padding: 4px;
+  border-radius: 7px;
+  font-size: 12px;
+  float: right;
+}

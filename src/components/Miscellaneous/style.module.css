@@ -1,0 +1,27 @@
+.miscellaneous_box {
+  position: relative;
+  display: inline-block;
+  width: 65px;
+  height: 20px;
+  margin-left: 15px;
+  margin-top: 18px;
+  background-color: #dbdbd5;
+  border: 1px solid #e7e7e0;
+  border-radius: 9px;
+  font-size: 12px;
+  padding: 2px;
+  text-align: center;
+  padding-top: 4px;
+}
+
+.miscellaneous_cont {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.close {
+  font-size: 12px !important;
+  margin-bottom: -2px;
+}

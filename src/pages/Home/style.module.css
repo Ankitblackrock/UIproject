@@ -1,0 +1,201 @@
+.home_container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f3f4e9;
+}
+.home_content {
+  flex: 1 1;
+  display: flex;
+  width: 100%;
+}
+.box {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  position: relative;
+  flex: 1 1;
+  overflow: hidden;
+  margin-left: 19px;
+}
+.hederandsearch {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.hederandsearch p {
+  font-size: 13px;
+  font-weight: 400;
+  color: grey;
+}
+
+.hederandsearch p span {
+  font-size: 13px;
+  font-weight: 400;
+  color: black;
+}
+
+.hederandsearch input {
+  border: none;
+  width: 155px;
+  height: 26px;
+  margin-right: 8px;
+  border-radius: 10px;
+  padding: 3px;
+  font-size: 11px;
+  box-shadow: 2px 0px 6px -3px black;
+  padding-left: 33px;
+}
+
+.search_icon {
+  position: absolute;
+  top: 6px;
+  left: 7px;
+  font-size: 20px !important;
+  color: #534848;
+}
+
+.social_btn {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-left: 25px;
+  margin-top: 8px;
+  font-size: 13px;
+  color: black;
+  background-color: white;
+  width: 16%;
+  height: 26px;
+  border-radius: 16px;
+}
+
+.youtube {
+  background: black;
+  color: white;
+  width: 51px;
+  border-radius: 14px;
+  margin-left: 4px;
+  font-size: 7px;
+  height: 15px;
+  padding: 4px 0px 0px 0px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.instagram {
+  font-size: 9px;
+  margin-left: 4px;
+}
+
+.header_para {
+  margin-top: -13px;
+  font-size: 10px;
+  color: grey;
+}
+/* The switch - the box around the slider */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 117px;
+  height: 25px;
+  margin-left: 25px;
+  margin-top: 18px;
+}
+.slider span {
+  position: absolute;
+  z-index: 10;
+}
+.slider span#no {
+  right: 8px;
+  top: 5px;
+  font-size: 10px;
+  font-weight: 500;
+}
+.slider span#yes {
+  left: 10px;
+  top: 6px;
+  font-size: 10px;
+  display: none;
+  font-weight: 500;
+}
+/* Hide default HTML checkbox */
+.switch input {
+  display: none;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: white;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "Youtube";
+  height: 22px;
+  width: 58px;
+  left: 1px;
+  bottom: 1.5px;
+  background-color: black;
+  transition: 0.4s;
+  color: white;
+  font-size: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+input:checked + .slider::before {
+  position: absolute;
+  content: "Instagram";
+  height: 22px;
+  width: 58px;
+  left: 1px;
+  bottom: 1.5px;
+  background-color: black;
+  transition: 0.4s;
+  color: white;
+  font-size: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+input:checked + .slider {
+  background-color: white;
+}
+
+input:checked + .slider span#no {
+  display: none;
+}
+input:checked + .slider span#yes {
+  display: inline;
+}
+input:focus + .slider {
+  box-shadow: 0 0 1px black;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(56px);
+  -ms-transform: translateX(56px);
+  transform: translateX(56px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 11px;
+}
